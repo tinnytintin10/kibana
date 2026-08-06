@@ -346,4 +346,14 @@ export const ConnectorIconsMap: Map<
     '.zabbix',
     lazy(() => import(/* webpackChunkName: "connectorIconZabbix" */ './specs/zabbix/icon')),
   ],
+
+  [
+    '.google_compute_engine',
+    lazy(
+      () =>
+        import(
+          /* webpackChunkName: "connectorIconGoogleComputeEngine" */ './specs/google_compute_engine/icon'
+        )
+    ),
+  ],
 ]);
